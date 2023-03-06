@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './ItemListContainer.css'
 
 const ItemListContainer = () => {
 
@@ -20,9 +21,9 @@ const ItemListContainer = () => {
     
     const Loading = () => {
         return (
-            <>
+            <div className="loading">
                 Loading...
-            </>
+            </div>
         )
     }
 
@@ -67,7 +68,7 @@ const ItemListContainer = () => {
            <div className="container my-5 py-5">
             <div className="row">
                 <div className="col-12 mb-5">
-                    <h1 className="display-6 fw-bolder text-center">Ultimos Ingresos</h1>
+                    <h2 className="display-6">Últimos Ingresos</h2>
                     <hr />
                 </div>
             </div>

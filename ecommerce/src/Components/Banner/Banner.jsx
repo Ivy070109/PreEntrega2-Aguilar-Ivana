@@ -8,9 +8,9 @@ const Banner = (props) => {
         <div className="card">
             <img src='./assets/BORA.JPG' className="card-img" alt="Background"/>
             <div className="card-img-overlay">
-                <div className="container">
-                    <h5 className="card-title">NEW ARRIVALS</h5>
-                    <p className="card-text">CHECK OUT ALL THE TRENDS</p>
+                <div className="container-text">
+                    <p className="card-text">Mira las nuevas tendencias</p>
+                    <h5 className="card-title">NUEVOS INGRESOS</h5>
                 </div>
             </div>
         </div>
