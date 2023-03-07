@@ -14,14 +14,14 @@
     justify-content: center;
 }
 
-.card-title {
+.card-title1 {
     display: inline;
     font-weight: bolder;
     margin-bottom: 0;
     font-size: 4.5rem;
 }
 
-.card-text {
+.card-text1 {
     font-size: 2rem;
 }
 

@@ -16,8 +16,8 @@ const Landing = () => {
             </Routes>
             <Routes>
                 <Route exact path={"/"} element={<ItemListContainer />} />
-                <Route exact path={"/category/:id"} element={   <ItemListContainer />} />
-                <Route exact path={"/producto/:id"} element={ <ItemDetailContainer />} />
+                <Route exact path={"/productos"} element={   <ItemListContainer />} />
+                <Route exact path={"/productos/:id"} element={ <ItemDetailContainer />} />
             </Routes>
             <Footer />
         </>
