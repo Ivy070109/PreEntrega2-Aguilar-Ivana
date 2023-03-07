@@ -26,7 +26,7 @@ const Navbar = () => {
                         <NavLink to={'/nosotros'} className="nav-link">Nosotros</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={'/contacto'} className="nav-link">Contacto</NavLink>
+                        <NavLink to={'/contactos'} className="nav-link">Contacto</NavLink>
                     </li>
                 </ul>
               <CartWidget />
