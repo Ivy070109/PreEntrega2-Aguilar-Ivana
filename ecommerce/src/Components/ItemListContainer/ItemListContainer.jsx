@@ -6,29 +6,18 @@ const ItemListContainer = () => {
 
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
-    const [loading, setLoading] = useState(false);
 
 
     useEffect(() => {
       const getProducts = async () => {
-        setLoading(true);
         const response = await fetch("https://fakestoreapi.com/products");
         setData(await response.clone().json());
         setFilter(await response.json());
-        setLoading(false);
       }
 
       getProducts();
     }, []);
 
-    
-    const Loading = () => {
-        return (
-            <div className="loading">
-                Loading...
-            </div>
-        )
-    }
 
     const filterProduct = (cat) => {
         const updatedList = data.filter((x)=>x.category === cat);
@@ -76,7 +65,7 @@ const ItemListContainer = () => {
                 </div>
             </div>
             <div className='row justify-content-center'>
-                {loading ? <Loading /> : <ShowProducts />}
+                <ShowProducts />
             </div>
            </div>
         </div>
